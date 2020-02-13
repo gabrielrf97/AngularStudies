@@ -1,0 +1,11 @@
+<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+<span>
+  <i class="fa fa-heart" 
+  [class.isNotLiked]="!isLiked"
+  [class.isLiked]="isLiked"
+  (click)="onClick()">
+</i>
+</span>
+<span>
+  {{numberOfLikes}}
+</span>
